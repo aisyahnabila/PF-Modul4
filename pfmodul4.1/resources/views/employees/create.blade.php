@@ -71,7 +71,7 @@
                         <div class="col-md-6 mb-3">
                             <label for="lastName" class="form-label">Last Name</label>
                             <input class="form-control @error('lastName') is-invalid @enderror" type="text"
-                                name="lastName" id="lastName" value="{{ old('firstName') }}"
+                                name="lastName" id="lastName" value="{{ old('lastName') }}"
                                 placeholder="Enter Last Name">
                             @error('lastName')
                                 <div class="invalid-feedback">{{ $message }}</div>
@@ -80,7 +80,7 @@
                         <div class="col-md-6 mb-3">
                             <label for="email" class="form-label">Email</label>
                             <input class="form-control @error('email') is-invalid @enderror" type="text"
-                                name="email" id="email" value="{{ old('firstName') }}" placeholder="Enter Email">
+                                name="email" id="email" value="{{ old('email') }}" placeholder="Enter Email">
                             @error('email')
                                 <div class="invalid-feedback">{{ $message }}</div>
                             @enderror
@@ -88,7 +88,7 @@
                         <div class="col-md-6 mb-3">
                             <label for="age" class="form-label">Age</label>
                             <input class="form-control @error('age') is-invalid @enderror" type="text" name="age"
-                                id="age" value="{{ old('firstName') }}" placeholder="Enter Age">
+                                id="age" value="{{ old('age') }}" placeholder="Enter Age">
                             @error('age')
                                 <div class="invalid-feedback">{{ $message }}</div>
                             @enderror
